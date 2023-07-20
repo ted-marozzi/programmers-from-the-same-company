@@ -1,14 +1,12 @@
-import { JokeQuote } from "../../components/index";
+import { JokeQuote } from "./JokeQuote";
 
 export function Home() {
   return (
-    <>
-      <h1 class="text-center text-4xl py-5">
+    <div class="h-full text-center flex flex-col justify-center">
+      <div class="text-4xl my-5">
         A group where we all pretend to be programmers from the same company
-      </h1>
-      <h3 class="h-full text-center py-5 text-xl">
-        <JokeQuote />
-      </h3>
-    </>
+      </div>
+      <JokeQuote />
+    </div>
   );
 }

@@ -48,9 +48,9 @@ export function JokeQuote() {
   getJoke();
 
   return (
-    <>
+    <div class="h-24">
       {joke() && (
-        <div class="h-full flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
           <div>"{joke()}"</div>
           <div>- {peep()}</div>
           <BiRegularRefresh
@@ -65,6 +65,6 @@ export function JokeQuote() {
           />
         </div>
       )}
-    </>
+    </div>
   );
 }
