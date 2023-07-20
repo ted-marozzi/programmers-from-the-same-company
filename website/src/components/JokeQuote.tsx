@@ -50,22 +50,20 @@ export function JokeQuote() {
   return (
     <>
       {joke() && (
-        <>
+        <div class="h-full flex flex-col justify-center items-center">
           <div>"{joke()}"</div>
           <div>- {peep()}</div>
-          <div class="w-full flex justify-center">
-            <BiRegularRefresh
-              onClick={() => {
-                if (isLoading()) {
-                  return;
-                }
-                getJoke();
-              }}
-              size={30}
-              class={`${isLoading() ? "animate-spin" : "cursor-pointer"} my-2`}
-            />
-          </div>
-        </>
+          <BiRegularRefresh
+            onClick={() => {
+              if (isLoading()) {
+                return;
+              }
+              getJoke();
+            }}
+            size={30}
+            class={`${isLoading() ? "animate-spin" : "cursor-pointer"} my-2`}
+          />
+        </div>
       )}
     </>
   );
