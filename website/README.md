@@ -1,3 +1,9 @@
+# Website
+
+Our main website.
+
+Written in Solid Js and Tailwind, get involved!
+
 ## Usage
 
 ```bash
